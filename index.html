@@ -36,10 +36,13 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     <h2>Menu</h2>
                     <ul class="links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="generic.html">Generic</a></li>
-                        <li><a href="elements.html">Elements</a></li>
-                        <li><a href="#">Log In</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        <li><button onclick="calculate()">Calculate</button></li>
+
+                        <!--
+<li><a href="generic.html">Generic</a></li>
+<li><a href="elements.html">Elements</a></li>
+<li><a href="#">Log In</a></li>
+<li><a href="#">Sign Up</a></li> -->
                     </ul>
                     <a href="#" class="close">Close</a>
                 </div>
@@ -198,14 +201,25 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                         <p>*The predicted chances of admission are derived from William Bishop's graph for Canadians and permanent residents applying from the Ontario Secondary School system for Fall 2020. <a href="https://theroadtoengineering.com/2019/09/26/chances-of-admission-for-fall-2020/">Source</a></p> 
 
-                        <small>Disclaimer: <b>This site is simply an admissions simulator and should not be taken seriously!</b> The data used is out of date due to lack of updates from Waterloo. For example, the adjustment factors are updated each year and the only list available is 2 years out of date. The blog about AIF scores is six years old and does not reflect how AIFs are currently scored. It is also not possible for applicants to give themselves a score on the interview without knowing how interviews are scored. The calculations here are as accurate as the story of a Canadian Goose learning to program in Javascript to bring you this website. Use this site at your own discretion. You have been warned! </small>
+                        
                         <br>
                         <br>
                         <img style="resize: both" src="chances.png" alt="Admission Graph">
                         <br>
                         <br>
-                        <h3><center>Click Mr. Goose for Wisdom</center></h3>
-                        <center><button id="btnSearch" onclick="myFunction()"><img width="100" height="90" src="mrgoose.jpg"></button></center>
+                        <small>Disclaimer: <b>This site is simply an admissions simulator and should not be taken seriously!</b> The data used is out of date due to lack of updates from Waterloo. For example, the adjustment factors are updated each year and the only list available is 2 years out of date. The blog about AIF scores is six years old and does not reflect how AIFs are currently scored. It is also not possible for applicants to give themselves a score on the interview without knowing how interviews are scored. The calculations here are as accurate as the story of a Canadian Goose learning to program in Javascript to bring you this website. Use this site at your own discretion. You have been warned! </small>
+                        
+                        
+
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <section id="footer">
+                <div class="inner">
+                    <h2 class="major">Get in touch</h2>
+                    <h3><center>Click Mr. Goose for Wisdom</center></h3>
+                        <center><button id="btnSearch" onclick="myFunction()" style=" height:90px; position:relative"><img width="100" height="90" src="mrgoose.jpg" style="align-self:baseline"></button></center>
                         <center>
                             <h3 id="title"></h3>
                             <small id="lol"></small>
@@ -221,15 +235,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                             <h1 id="thank"></h1>
                         </center>
-
-                    </div>
-                </div>
-            </section>
-            <!-- Footer -->
-            <section id="footer">
-                <div class="inner">
-                    <h2 class="major">Get in touch</h2>
-                    <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                    <!--
                     <form method="post" action="#">
                         <div class="fields">
                             <div class="field">
@@ -261,12 +267,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
                         <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
                     </ul>
+-->
                     <ul class="copyright">
                         <li>&copy; BearBiPolar 2020. </li>
                         <li>Certified and Approved by Mr. Goose</li>
                         <li>All images belong to their respective owners.</li>
                         <li>Template: <a href="http://html5up.net">HTML5 UP</a></li> 
                     </ul>
+
                 </div>
             </section>
 
