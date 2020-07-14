@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<!--
+Solid State by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Chance Me Mr. Goose</title>
+        <meta name="description" content="A Waterloo Engineering Admission Chance Calculator.">
+        <link rel="icon" href="engineering.jpg">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+    </head>
+
+    <body class="is-preload">
+
+        <!-- Page Wrapper -->
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header" class="alt">
+                <h1><a href="index.html">Solid State</a></h1>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generic.html">Generic</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </nav>
+
+            <!-- Banner -->
+
+
+            <section id="banner" style="background-image: url('campusbackground.png');">
+
+                <div class="inner">
+                    <div class="logo"><span class="icon fa-gem"></span></div>
+
+                    <h2 style="padding: 15px;
+                               background: rgba(0, 0, 0, 0.6);">Chance Me Mr. Goose &#129414 &#129442</h2>
+                    <p style="padding: 15px;
+                              background: rgba(0, 0, 0, 0.6);">A Waterloo Engineering Admission Chance Calculator by <a href="http://williamw.me">Mr. Goose</a></p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Wrapper -->
+            <section id="wrapper">
+
+                <!-- One -->
+                <section id="one" class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="#" class="image"><img src="sunglasses.jpg" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">Waterloo Engineering Program Groups</h2>
+                            <p>Group 1: Biomedical and Software</p>
+                            <p>Group 2: Computer, Electrical, Mechanical, Mechatronics, and Systems Design	
+                            </p>
+                            <p>Group 3: Architectural, Chemical, Civil, Environmental, Geological, Management, and Nanotechnology</p>
+
+
+                            <h3 class="major">What is your engineering program group number? (1-3) </h3>
+                            <!--
+<input type="text" id="programGroup" size="50" placeholder="Please enter your program group NUMBER here (1-3)">
+-->
+
+                            <select name="demo-category" id="programGroup" style="width:auto; float:right" >
+                                <option value="">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+
+                            </select>
+
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Two -->
+                <section id="two" class="wrapper alt spotlight style2">
+                    <div class="inner">
+                        <a href="#" class="image"><img src="thankyou.jpg" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">What is your admission average? (0-100)</h2>
+                            <p>Your admission average is based on our required courses and your top mark in a 6th, grade 12 course. Admission averages are calculated based on the marks are available at the time of review, and may include Grade 11 subjects if more recent marks are not yet available.</p>
+
+                            <input type="text" id="average" size="50" placeholder="Please enter your high school average here (0-100)">
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Three -->
+                <section id="three" class="wrapper spotlight style3">
+                    <div class="inner">
+                        <a href="#" class="image"><img src="thankmrgoose.png" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">What is your high school adjustment factor?</h2>
+                            <p>Waterloo Engineering does apply an adjustment factor based on historical performance from a given school (first-year university averages minus final high school averages) over the past 6+ years.  This enables us to select applicants with the highest likelihood of success. (9.9-27.1; 16.1 is average) <a href="https://docs.google.com/spreadsheets/d/1aj9k8iaBgWYREcT6vtiKAFV8X8aTYtN7fdxHlLbSioA/edit#gid=1903126713">Adjustment Factor Spreadsheet</a></p>
+
+                            <input type="text" id="adjustment" size="50" placeholder="Please enter your high school adjustment factor here (9.9-27.1; 16.1 is average)">
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Four -->
+                <section id="four" class="wrapper alt style1">
+                    <div class="inner">
+                        <h2 class="major">Other Information</h2>
+                        <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                        <section class="features">
+                            <article>
+                                <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                                <h3 class="major">Admission Information Form</h3>
+                                <p>What is your estimated AIF score? <br>  <a href="https://profbillanderson.com/2014/01/04/scoring-your-aif/">Source</a> (0-5; average is 2.5-3.5)</p>
+                                <input type="text" id="aif" size="50" placeholder="Please enter your estimated AIF score here (0-5; average is 2.5-3.5)">
+
+                            </article>
+                            <article>
+                                <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                                <h3 class="major">Online Video Interview</h3>
+                                <p>What is your estimated interview score? <br><a href="https://bopeng.io/how-to-get-into-waterloo-engineering">Source</a> (0-3; average is 2)  </p>
+                                <input type="text" id="interview" size="50" placeholder="Please enter your estimated interview score here (0-3; average is 2)">
+
+                            </article>
+
+                            <article>
+                                <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+                                <h3 class="major">Internships</h3>
+                                <p>Have you worked any internships in your respective field? If so, how many?<br><a href="">Source</a> </p>
+                                <input type="text" id="internships" size="50" placeholder="Please enter your internship number here">
+                            </article>
+                            <article>
+                                <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                                <h3 class="major">Shadow Day</h3>
+                                <p>Did you attend a shadow day for Engineering at the University of Waterloo?<br><a href="https://bopeng.io/how-to-get-into-waterloo-engineering">Source</a>   </p>
+                                <div class="col-12">
+
+                                    <select name="demo-category" id="shadowdaychoice">
+                                        <option value="">-</option>
+                                        <option value="1">Yes</option>
+                                        <option value="0">No</option>
+
+                                    </select>
+                                </div>
+                            </article>
+                        </section>
+                        <div align="center">
+                            <p>Click the "Calculate" button to predict your chances of admission.</p>
+
+                            <a class="button" onclick="calculate()">Calculate</a>
+
+                            <br>
+                            <br>    
+
+                            <h1 id="programs"></h1>
+
+                            <h1 id="adjustedAverage"></h1>
+
+                            <h1 id="realAdjustedAverage"></h1>
+
+                            <h1 id="percent"></h1>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+            <!-- Results -->
+            <section id="results" class="wrapper spotlight style1">
+                <div class="inner">
+                    <a href="#" class="image"><img src="thankmrgoose.png" alt="" /></a>
+                    <div class="content">
+
+
+                        <p>*The predicted chances of admission are derived from William Bishop's graph for Canadians and permanent residents applying from the Ontario Secondary School system for Fall 2020. <a href="https://theroadtoengineering.com/2019/09/26/chances-of-admission-for-fall-2020/">Source</a></p> 
+
+                        <small>Disclaimer: <b>This site is simply an admissions simulator and should not be taken seriously!</b> The data used is out of date due to lack of updates from Waterloo. For example, the adjustment factors are updated each year and the only list available is 2 years out of date. The blog about AIF scores is six years old and does not reflect how AIFs are currently scored. It is also not possible for applicants to give themselves a score on the interview without knowing how interviews are scored. The calculations here are as accurate as the story of a Canadian Goose learning to program in Javascript to bring you this website. Use this site at your own discretion. You have been warned! </small>
+                        <br>
+                        <br>
+                        <img style="resize: both" src="chances.png" alt="Admission Graph">
+                        <br>
+                        <br>
+                        <h3><center>Click Mr. Goose for Wisdom</center></h3>
+                        <center><button id="btnSearch" onclick="myFunction()"><img width="100" height="90" src="mrgoose.jpg"></button></center>
+                        <center>
+                            <h3 id="title"></h3>
+                            <small id="lol"></small>
+                            <p id="first"></p>
+                            <div id="points"></div>
+
+                            <p id="second"></p>
+                            <div id="excel"></div>
+
+                            <p id="third"></p>
+                            <div id="desmos"></div>
+                            <br>
+
+                            <h1 id="thank"></h1>
+                        </center>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <section id="footer">
+                <div class="inner">
+                    <h2 class="major">Get in touch</h2>
+                    <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </form>
+                    <ul class="contact">
+                        <li class="icon solid fa-home">
+                            Untitled Inc<br />
+                            1234 Somewhere Road Suite #2894<br />
+                            Nashville, TN 00000-0000
+                        </li>
+                        <li class="icon solid fa-phone">(000) 000-0000</li>
+                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+                        <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+                        <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+                        <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; BearBiPolar 2020. </li>
+                        <li>Certified and Approved by Mr. Goose</li>
+                        <li>All images belong to their respective owners.</li>
+                        <li>Template: <a href="http://html5up.net">HTML5 UP</a></li> 
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            function myFunction(){
+                document.getElementById('btnSearch').disabled = 'disabled';
+                document.getElementById("title").innerHTML = "This is how Mr. Goose chances you application!";
+                document.getElementById("lol").innerHTML = "Watch Closely...";
+                document.getElementById("first").innerHTML = "In order to predict one’s chance of admission, Mr. Goose documents the data points for each curve from Waterloo’s official source to recreate the trends seen below.";
+                var img = document.createElement("img");
+
+                img.src = "graph.png";
+                var src = document.getElementById("points");
+
+                src.appendChild(img);
+
+                document.getElementById("second").innerHTML = "Then, Mr. Goose exports the data coordinates onto Excel to extrapolate a function for each of the program groups. The trendlines allow Mr. Goose to return the chance of admission at every point on the graph consistently and accurately (All R squared values are above 0.998)";
+                var im = document.createElement("img");
+
+                im.src = "excel.png";
+                var src = document.getElementById("excel");
+
+                src.appendChild(im);
+                document.getElementById("third").innerHTML = "Mr. Goose then uses these equations from Excel to calculate the predicted chances of admission on this website. Mr. Goose recreates the trends on Desmos to check for its validity, and it closely resembles the trendlines seen on the original graph from William Bishop.";
+                var imgee = document.createElement("img");
+
+                imgee.src = "desmos.png";
+                var src = document.getElementById("desmos");
+
+
+                src.appendChild(imgee);
+                document.getElementById("thank").innerHTML = "Thank Mr. Goose.";
+
+
+            }
+
+            function calculate() {
+
+                var valid = true;
+
+                programGroup = document.getElementById("programGroup").value;
+                x = programGroup;
+                try { 
+                    if(x === "")  throw "empty";
+                    if(isNaN(x)) throw "not a number";
+                    x = Number(x);
+                    if(x < 1)  throw "too low";
+                    if(x > 3)   throw "too high";
+                }
+                /*
+                programGroup = parseInt(document.getElementById("programGroup").value);
+                x = programGroup;
+                try { 
+                    if(x === "")  throw "empty";
+                    if(isNaN(x)) throw "not a number";
+                    x = Number(x);
+                    if(x < 1)  throw "too low";
+                    if(x > 3)   throw "too high";
+                }*/
+
+                catch(err) {
+                    alert("Program group number is " + err);
+                    valid = false;
+                }
+                if(valid)
+                {
+                    average = parseFloat(document.getElementById("average").value);
+                    x = average;
+                    try { 
+                        if(x === "")  throw "empty";
+                        if(isNaN(x)) throw "not a number";
+                        x = Number(x);
+                        if(x < 0)  throw "too low";
+                        if(x > 100)   throw "too high";
+                    }
+                    catch(err) {
+                        alert("Average is " + err);
+                        valid = false;
+                    }
+                }
+                if(valid)
+                {
+                    adjustment = parseFloat(document.getElementById("adjustment").value);
+                    x = adjustment;
+                    try { 
+                        if(x === "")  throw "empty";
+                        if(isNaN(x)) throw "not a number";
+                        x = Number(x);
+                        if(x < 0)  throw "too low";
+                        if(x > 30)   throw "too high";
+                    }
+                    catch(err) {
+                        alert("Adjustment is " + err);
+                        valid = false;
+                    }
+                }
+                if(valid)
+                {
+                    aif = parseFloat(document.getElementById("aif").value);
+                    x = aif;
+                    try { 
+                        if(x === "")  throw "empty";
+                        if(isNaN(x)) throw "not a number";
+                        x = Number(x);
+                        if(x < 0)  throw "too low";
+                        if(x > 5)   throw "too high";
+                    }
+                    catch(err) {
+                        alert("AIF Score is " + err);
+                        valid = false;
+                    }
+                }
+                if(valid)
+                {
+                    interview = parseFloat(document.getElementById("interview").value);
+                    x = interview;
+                    try { 
+                        if(x === "")  throw "empty";
+                        if(isNaN(x)) throw "not a number";
+                        x = Number(x);
+                        if(x < 0)  throw "too low";
+                        if(x > 3)   throw "too high";
+                    }
+                    catch(err) {
+                        alert("Interview Score is " + err);
+                        valid = false;
+                    }
+                }
+
+                if(valid)
+                {
+                    var adjustedAverage = average - adjustment + 16.1;
+                    adjustedAverage = round(adjustedAverage);
+                    var real = adjustedAverage + aif + interview - 5;
+                    real = round(real);
+                    var chance = 0;
+
+                    /*private*/ this.programGroups = ["Biomedical and Software", "Computer, Electrical, Mechanical, Mechatronics, and Systems Design", "Architectural, Chemical, Civil, Environmental, Geological, Management, and Nanotechnology"];
+
+                    document.getElementById("programs").innerHTML = "Your Selected Program Group: " + this.programGroups[programGroup - 1];
+
+                    document.getElementById("adjustedAverage").innerHTML = "Your Adjusted Admission Average is: " + adjustedAverage + "%";
+
+                    document.getElementById("realAdjustedAverage").innerHTML = "Your Adjusted Admission Average including AIF and Interview is: " + real + "%";
+
+                    if(real > 100)
+                    {
+                        real = 100;
+                    }
+                    if(real < 80)
+                        real = 80;
+                    var x = real;
+                    switch (programGroup) {
+                        case 1:
+                            chance = -9.91665E-7 * Math.pow(x, 6) + 7.12766582E-4 * Math.pow(x, 5) - 0.199337541744 * Math.pow(x, 4) + 28.477751641706 * Math.pow(x, 3) - 2221.06905579802 * Math.pow(x, 2) + 90365.708229188 * x - 1505792.89323006;
+                            break;
+                        case 2:
+                            chance = 7.927378E-6 * Math.pow(x, 6) - 0.003815953092 * Math.pow(x, 5) + 0.753733211049 * Math.pow(x, 4) - 77.9121684881 * Math.pow(x, 3) + 4421.4707888 * Math.pow(x, 2) - 129515.4702471 * x + 1507941.8835368;
+                            break;
+                        case 3:
+                            chance = 5.942718E-4 * Math.pow(x, 4) - 0.2085009655 * Math.pow(x, 3) + 27.0594414776 * Math.pow(x, 2) - 1532.9010505906 * x + 31865.616776;
+                            break;
+                        default:
+                            break;
+                    }
+
+                    chance = round(chance);
+                    if(chance > 100)
+                        chance = 100;
+                    else if(chance < 0)
+                        chance = 0;
+
+                    document.getElementById("percent").innerHTML = "Your Chance of Admission* is: " + chance + "%";
+                }
+
+
+            }
+
+            function round(chance)
+            {
+                chance = chance * 10;
+                chance = Math.round(chance);
+                chance = chance / 10;
+                return chance;
+            }
+        </script>
+    </body>
+</html>
