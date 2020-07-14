@@ -54,7 +54,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <section id="banner" style="background-image: url('campusbackground.png');">
 
                 <div class="inner">
-                    <div class="logo"><span class="icon fa-gem"></span></div>
+                    <!--<div class="logo"><span class="icon fa-gem"></span></div>-->
 
                     <h2 style="padding: 15px;
                                background: rgba(0, 0, 0, 0.6);">Chance Me Mr. Goose &#129414 &#129442</h2>
@@ -174,7 +174,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         </section>
                         <div align="center">
                             <p>Click the "Calculate" button to predict your chances of admission.</p>
-
+                             
                             <a class="button" onclick="calculate()">Calculate</a>
 
                             <br>
@@ -195,18 +195,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <!-- Results -->
             <section id="results" class="wrapper spotlight style1">
                 <div class="inner">
-                    <a href="#" class="image"><img src="thankmrgoose.png" alt="" /></a>
+                    
                     <div class="content">
 
 
+                        <center><img style="max-width: 100%" src="chances.png" alt="Admission Graph"></center>
+                        <br>
                         <p>*The predicted chances of admission are derived from William Bishop's graph for Canadians and permanent residents applying from the Ontario Secondary School system for Fall 2020. <a href="https://theroadtoengineering.com/2019/09/26/chances-of-admission-for-fall-2020/">Source</a></p> 
-
+                    
                         
-                        <br>
-                        <br>
-                        <img style="resize: both" src="chances.png" alt="Admission Graph">
-                        <br>
-                        <br>
                         <small>Disclaimer: <b>This site is simply an admissions simulator and should not be taken seriously!</b> The data used is out of date due to lack of updates from Waterloo. For example, the adjustment factors are updated each year and the only list available is 2 years out of date. The blog about AIF scores is six years old and does not reflect how AIFs are currently scored. It is also not possible for applicants to give themselves a score on the interview without knowing how interviews are scored. The calculations here are as accurate as the story of a Canadian Goose learning to program in Javascript to bring you this website. Use this site at your own discretion. You have been warned! </small>
                         
                         
@@ -297,6 +294,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 var img = document.createElement("img");
 
                 img.src = "graph.png";
+                img.style="max-width: 100%";
                 var src = document.getElementById("points");
 
                 src.appendChild(img);
@@ -305,6 +303,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 var im = document.createElement("img");
 
                 im.src = "excel.png";
+                im.style="max-width: 100%";
                 var src = document.getElementById("excel");
 
                 src.appendChild(im);
@@ -312,6 +311,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 var imgee = document.createElement("img");
 
                 imgee.src = "desmos.png";
+                imgee.style="max-width: 100%";
                 var src = document.getElementById("desmos");
 
 
