@@ -443,7 +443,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     
                     
                     var x = real;
-                    var chance = 70;
+                    var chance = 0;
                     switch (programGroupNumber) {
                         case "1":
                             chance = -9.91665E-7 * Math.pow(x, 6) + 7.12766582E-4 * Math.pow(x, 5) - 0.199337541744 * Math.pow(x, 4) + 28.477751641706 * Math.pow(x, 3) - 2221.06905579802 * Math.pow(x, 2) + 90365.708229188 * x - 1505792.89323006;
@@ -455,6 +455,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                             chance = 5.942718E-4 * Math.pow(x, 4) - 0.2085009655 * Math.pow(x, 3) + 27.0594414776 * Math.pow(x, 2) - 1532.9010505906 * x + 31865.616776;
                             break;
                         default:
+                            chance = 75%;
                             break;
                     }
                     
