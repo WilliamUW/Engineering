@@ -182,6 +182,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                             <h1 id="programs"></h1>
 
+                            <h1 id="averageLabel"></h1>
+                            
                             <h1 id="adjustedAverage"></h1>
 
                             <h1 id="realAdjustedAverage"></h1>
@@ -327,6 +329,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
                 programGroup = document.getElementById("programGroup").value;
                 x = programGroup;
+                programGroupNumber = programGroup;
                 try { 
                     if(x === "")  throw "empty";
                     if(isNaN(x)) throw "not a number";
@@ -420,42 +423,47 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     adjustedAverage = round(adjustedAverage);
                     var real = adjustedAverage + aif + interview - 5;
                     real = round(real);
-                    var chance = 0;
+                    
 
                     /*private*/ this.programGroups = ["Biomedical and Software", "Computer, Electrical, Mechanical, Mechatronics, and Systems Design", "Architectural, Chemical, Civil, Environmental, Geological, Management, and Nanotechnology"];
 
                     document.getElementById("programs").innerHTML = "Your Selected Program Group: " + this.programGroups[programGroup - 1];
+                    
+                    document.getElementById("averageLabel").innerHTML = "Your Admission Average is: " + average + "%";
 
                     document.getElementById("adjustedAverage").innerHTML = "Your Adjusted Admission Average is: " + adjustedAverage + "%";
-
-                    document.getElementById("realAdjustedAverage").innerHTML = "Your Adjusted Admission Average including AIF and Interview is: " + real + "%";
-
+                    
+                    // If Average is greater than 100% or less than 80%
                     if(real > 100)
-                    {
                         real = 100;
-                    }
-                    if(real < 80)
+                    else if(real < 80)
                         real = 80;
+                    
+                    document.getElementById("realAdjustedAverage").innerHTML = "Your Adjusted Admission Average including AIF and Interview is: " + real + "%";
+                    
+                    
                     var x = real;
-                    switch (programGroup) {
-                        case 1:
+                    var chance = 70;
+                    switch (programGroupNumber) {
+                        case "1":
                             chance = -9.91665E-7 * Math.pow(x, 6) + 7.12766582E-4 * Math.pow(x, 5) - 0.199337541744 * Math.pow(x, 4) + 28.477751641706 * Math.pow(x, 3) - 2221.06905579802 * Math.pow(x, 2) + 90365.708229188 * x - 1505792.89323006;
                             break;
-                        case 2:
+                        case "2":
                             chance = 7.927378E-6 * Math.pow(x, 6) - 0.003815953092 * Math.pow(x, 5) + 0.753733211049 * Math.pow(x, 4) - 77.9121684881 * Math.pow(x, 3) + 4421.4707888 * Math.pow(x, 2) - 129515.4702471 * x + 1507941.8835368;
                             break;
-                        case 3:
+                        case "3":
                             chance = 5.942718E-4 * Math.pow(x, 4) - 0.2085009655 * Math.pow(x, 3) + 27.0594414776 * Math.pow(x, 2) - 1532.9010505906 * x + 31865.616776;
                             break;
                         default:
                             break;
                     }
-
+                    
                     chance = round(chance);
                     if(chance > 100)
                         chance = 100;
                     else if(chance < 0)
                         chance = 0;
+                        
 
                     document.getElementById("percent").innerHTML = "Your Chance of Admission* is: " + chance + "%";
                 }
