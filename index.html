@@ -303,7 +303,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     if(x > 3)   throw "too high";
                 }
                 catch(err) {
-                    alert("Program group number is " + err);
+                    alert("Your Program Group Number Input is " + err + ".");
                     valid = false;
                 }
                 if(valid)
@@ -314,11 +314,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         if(x === "")  throw "empty";
                         if(isNaN(x)) throw "not a number";
                         x = Number(x);
-                        if(x < 0)  throw "too low";
-                        if(x > 100)   throw "too high";
+                        if(x < 0)  throw "too low (0 - 100)";
+                        if(x > 100)   throw "too high (0 - 100)";
                     }
                     catch(err) {
-                        alert("Average is " + err);
+                        alert("Your Admissions Average Input is " + err + ".");
                         valid = false;
                     }
                 }
@@ -334,7 +334,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         if(x > 30)   throw "too high";
                     }
                     catch(err) {
-                        alert("Adjustment is " + err);
+                        alert("Adjustment is " + err + ".");
                         valid = false;
                     }
                 }
