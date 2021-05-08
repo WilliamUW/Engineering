@@ -35,8 +35,16 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="inner">
                     <h2>Menu</h2>
                     <ul class="links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><button onclick="calculate()">Calculate</button></li>
+                        <li>
+                            <a href="https://williamuw.github.io/ChanceMeMrGoose/">All Faculties</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        
+                        <li>
+                            <button onclick="calculate()">Calculate</button>
+                        </li>
 
                         <!--
 <li><a href="generic.html">Generic</a></li>
@@ -91,10 +99,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                                 <option value="2">2</option>
                                 <option value="3">3</option>
 
-                            </select>
+                                </select>
                             </div>
-                            
-                            
+
+
                             <br>
                             <br>
 
@@ -178,7 +186,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                         </section>
                         <div align="center">
                             <p>Click the "Calculate" button to predict your chances of admission.</p>
-                             
+
                             <a class="button" onclick="calculate()">Calculate</a>
 
                             <br>
@@ -187,7 +195,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                             <h1 id="programs"></h1>
 
                             <h1 id="averageLabel"></h1>
-                            
+
                             <h1 id="adjustedAverage"></h1>
 
                             <h1 id="realAdjustedAverage"></h1>
@@ -201,18 +209,18 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <!-- Results -->
             <section id="results" class="wrapper spotlight style1">
                 <div class="inner">
-                    
+
                     <div class="content">
 
 
                         <center><img style="max-width: 100%" src="chances.png" alt="Admission Graph"></center>
                         <br>
                         <p>*The predicted chances of admission are derived from William Bishop's graph for Canadians and permanent residents applying from the Ontario Secondary School system for Fall 2020. <a href="https://theroadtoengineering.com/2019/09/26/chances-of-admission-for-fall-2020/">Source</a></p> 
-                    
-                        
+
+
                         <small>Disclaimer: <b>This site is simply an admissions simulator and should not be taken seriously!</b> The data used is out of date due to lack of updates from Waterloo. For example, the adjustment factors are updated each year and the only list available is 2 years out of date. The blog about AIF scores is six years old and does not reflect how AIFs are currently scored. It is also not possible for applicants to give themselves a score on the interview without knowing how interviews are scored. The calculations here are as accurate as the story of a Canadian Goose learning to program in Javascript to bring you this website. Use this site at your own discretion. You have been warned! </small>
-                        
-                        
+
+
 
                     </div>
                 </div>
@@ -222,56 +230,56 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="inner">
                     <h2 class="major">Click Mr. Goose to see how the calculations were done!</h2>
                     <h3><center></center></h3>
-                        <center><button id="btnSearch" onclick="myFunction()" style=" height:90px; position:relative"><img width="100" height="90" src="mrgoose.jpg" style="align-self:baseline"></button></center>
-                        <center>
-                            <h3 id="title"></h3>
-                            <small id="lol"></small>
-                            <p id="first"></p>
-                            <div id="points"></div>
+                    <center><button id="btnSearch" onclick="myFunction()" style=" height:90px; position:relative"><img width="100" height="90" src="mrgoose.jpg" style="align-self:baseline"></button></center>
+                    <center>
+                        <h3 id="title"></h3>
+                        <small id="lol"></small>
+                        <p id="first"></p>
+                        <div id="points"></div>
 
-                            <p id="second"></p>
-                            <div id="excel"></div>
+                        <p id="second"></p>
+                        <div id="excel"></div>
 
-                            <p id="third"></p>
-                            <div id="desmos"></div>
-                            <br>
+                        <p id="third"></p>
+                        <div id="desmos"></div>
+                        <br>
 
-                            <h1 id="thank"></h1>
-                        </center>
+                        <h1 id="thank"></h1>
+                    </center>
                     <!--
-                    <form method="post" action="#">
-                        <div class="fields">
-                            <div class="field">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name" />
-                            </div>
-                            <div class="field">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" />
-                            </div>
-                            <div class="field">
-                                <label for="message">Message</label>
-                                <textarea name="message" id="message" rows="4"></textarea>
-                            </div>
-                        </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" /></li>
-                        </ul>
-                    </form>
-                    <ul class="contact">
-                        <li class="icon solid fa-home">
-                            Untitled Inc<br />
-                            1234 Somewhere Road Suite #2894<br />
-                            Nashville, TN 00000-0000
-                        </li>
-                        <li class="icon solid fa-phone">(000) 000-0000</li>
-                        <li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-                        <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-                        <li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-                        <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-                    </ul>
+<form method="post" action="#">
+<div class="fields">
+<div class="field">
+<label for="name">Name</label>
+<input type="text" name="name" id="name" />
+</div>
+<div class="field">
+<label for="email">Email</label>
+<input type="email" name="email" id="email" />
+</div>
+<div class="field">
+<label for="message">Message</label>
+<textarea name="message" id="message" rows="4"></textarea>
+</div>
+</div>
+<ul class="actions">
+<li><input type="submit" value="Send Message" /></li>
+</ul>
+</form>
+<ul class="contact">
+<li class="icon solid fa-home">
+Untitled Inc<br />
+1234 Somewhere Road Suite #2894<br />
+Nashville, TN 00000-0000
+</li>
+<li class="icon solid fa-phone">(000) 000-0000</li>
+<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
+<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+</ul>
 --> 
-                    <p>Final Disclaimer: Mr. Goose is a fictional character. The calculations produced by this website are only for educational purposes, use at your risk.</p>
+                    <p>Final Disclaimer: Mr. Goose is a fictional character. The calculations produced by this website are only for educational purposes, proceed at your own risk.</p>
                     <ul class="copyright">
                         <li>&copy; William Wang 2021. </li>
                         <li>Certified and Approved by Mr. Goose</li>
@@ -291,7 +299,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        
+
         <script>
             function calculate() {
 
@@ -427,7 +435,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         </script>
         <script>
             function errorCalculate() {
-                
+
                 var valid = true;
 
                 programGroup = document.getElementById("programGroup").value;
@@ -526,25 +534,25 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     adjustedAverage = round(adjustedAverage);
                     var real = adjustedAverage + aif + interview - 5;
                     real = round(real);
-                    
+
 
                     /*private*/ this.programGroups = ["Biomedical and Software", "Computer, Electrical, Mechanical, Mechatronics, and Systems Design", "Architectural, Chemical, Civil, Environmental, Geological, Management, and Nanotechnology"];
 
                     document.getElementById("programs").innerHTML = "Your Selected Program Group: " + this.programGroups[programGroup - 1];
-                    
+
                     document.getElementById("averageLabel").innerHTML = "Your Admission Average is: " + average + "%";
 
                     document.getElementById("adjustedAverage").innerHTML = "Your Adjusted Admission Average is: " + adjustedAverage + "%";
-                    
+
                     // If Average is greater than 100% or less than 80%
                     if(real > 100)
                         real = 100;
                     else if(real < 80)
                         real = 80;
-                    
+
                     document.getElementById("realAdjustedAverage").innerHTML = "Your Adjusted Admission Average including AIF and Interview is: " + real + "%";
-                    
-                    
+
+
                     var x = real;
                     var chance = 0;
                     switch (programGroupNumber) {
@@ -561,21 +569,21 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                             chance = 75%;
                             break;
                     }
-                    
+
                     chance = round(chance);
                     if(chance > 100)
                         chance = 100;
                     else if(chance < 0)
                         chance = 0;
-                        
+
 
                     document.getElementById("percent").innerHTML = "Your Chance of Admission* is: " + chance + "%";
                 }}
 
 
-            
+
         </script>
-        
+
         <script>function myFunction()
             {
                 document.getElementById('btnSearch').disabled = 'disabled';
@@ -619,6 +627,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 return chance;
             }
         </script>
-        
+
     </body>
 </html>
