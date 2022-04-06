@@ -96,7 +96,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 -->
                             <div><select name="demo-category" id="programGroup" style="width:auto; float:right" >
                                 <option value="">-</option>
-                                <option value="1">1</option>
+                                <option value="1" selected="selected">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
 
@@ -121,7 +121,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                             <h2 class="major">What is your admission average? (0-100)</h2>
                             <p>Your admission average is based on our required courses and your top mark in a 6th, grade 12 course. Admission averages are calculated based on the marks are available at the time of review, and may include Grade 11 subjects if more recent marks are not yet available.</p>
 
-                            <input type="text" id="average" size="50" placeholder="Please enter your high school average here (0-100)">
+                            <input type="text" id="average" size="50" value="95" placeholder="Please enter your high school average here (0-100)">
 
                         </div>
                     </div>
@@ -135,7 +135,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                             <h2 class="major">What is your high school adjustment factor?</h2>
                             <p>Waterloo Engineering does apply an adjustment factor based on historical performance from a given school (first-year university averages minus final high school averages) over the past 6+ years.  This enables us to select applicants with the highest likelihood of success. (Range: 9.9 - 27.1; Average is 16.1) <a href="https://docs.google.com/spreadsheets/d/1aj9k8iaBgWYREcT6vtiKAFV8X8aTYtN7fdxHlLbSioA/edit#gid=1903126713">Adjustment Factor Spreadsheet</a></p>
 
-                            <input type="text" id="adjustment" size="50" placeholder="Please enter your high school adjustment factor here (Range: 9.9 - 27.1; Average is 16.1)">
+                            <input type="text" id="adjustment" size="50" value="16.1" placeholder="Please enter your high school adjustment factor here (Range: 9.9 - 27.1; Average is 16.1)">
 
                         </div>
                     </div>
@@ -151,14 +151,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                                 <a href="#" class="image"><img src="aif.png" alt="" /></a>
                                 <h3 class="major">Admission Information Form</h3>
                                 <p>What is your estimated AIF score? <br>  <a href="https://profbillanderson.com/2014/01/04/scoring-your-aif/">Source "https://profbillanderson.com/2014/01/04/scoring-your-aif/"</a> (0-5; average is 2.5-3.5)</p>
-                                <input type="text" id="aif" size="50" placeholder="Please enter your estimated AIF score here (0-5; average is 2.5-3.5)">
+                                <input type="text" id="aif" size="50" value="3" placeholder="Please enter your estimated AIF score here (0-5; average is 2.5-3.5)">
                                 <br>
                             </article>
                             <article>
                                 <a href="#" class="image"><img src="interview.png" alt="" /></a>
                                 <h3 class="major">Online Video Interview</h3>
                                 <p>What is your estimated interview score? <br><a href="https://bopeng.io/how-to-get-into-waterloo-engineering">Source "https://bopeng.io/how-to-get-into-waterloo-engineering"</a> (0-3; average is 2)  </p>
-                                <input type="text" id="interview" size="50" placeholder="Please enter your estimated interview score here (0-3; average is 2)">
+                                <input type="text" id="interview" size="50" value="2" placeholder="Please enter your estimated interview score here (0-3; average is 2)">
                                 <br>
                             </article>
 
@@ -231,7 +231,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="inner">
                     <h2 class="major">Click Mr. Goose to see how the calculations were done!</h2>
                     <h3><center></center></h3>
-                    <center><button id="btnSearch" onclick="myFunction()" style=" height:90px; position:relative"><img width="100" height="90" src="mrgoose.jpg" style="align-self:baseline"></button></center>
+                    <center><button id="btnSearch" onclick="showHowItWasMade()" style=" height:90px; position:relative"><img width="100" height="90" src="mrgoose.jpg" style="align-self:baseline"></button></center>
                     <center>
                         <h3 id="title"></h3>
                         <small id="lol"></small>
@@ -429,6 +429,8 @@ Nashville, TN 00000-0000
                         chance = 0;
 
                     document.getElementById("percent").innerHTML = "Your Chance of Admission* is: " + chance + "%";
+                                    alert("Your Chance of Admission* is: " + chance + "%");
+
                 }
 
 
@@ -579,13 +581,14 @@ Nashville, TN 00000-0000
 
 
                     document.getElementById("percent").innerHTML = "Your Chance of Admission* is: " + chance + "%";
+                    alert("Your Chance of Admission* is: " + chance + "%");
                 }}
 
 
 
         </script>
 
-        <script>function myFunction()
+        <script>function showHowItWasMade()
             {
                 document.getElementById('btnSearch').disabled = 'disabled';
                 document.getElementById("title").innerHTML = "This is how Mr. Goose chances you application!";
@@ -599,7 +602,7 @@ Nashville, TN 00000-0000
 
                 src.appendChild(img);
 
-                document.getElementById("second").innerHTML = "Mr. Goose then exports the data coordinates onto Excel to extrapolate a function for each of the program groups. The trendlines allow Mr. Goose to return the chance of admission at every point on the graph consistently and accurately (All R squared values are above 0.998)";
+                document.getElementById("second").innerHTML = "Mr. Goose then exports the data coordinates onto Excel to interpolate a function for each of the program groups. The trendlines allow Mr. Goose to return the chance of admission at every point on the graph consistently and accurately (All R squared values are above 0.998)";
                 var im = document.createElement("img");
 
                 im.src = "excel.png";
